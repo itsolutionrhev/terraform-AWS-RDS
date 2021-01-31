@@ -1,6 +1,6 @@
 #### Setup AWS-RDS step by step####
 
-Here we are Create AWS-RDS with maridb using terraform (Terraform v0.13.5) + visualstudio (version 1.51.1)  
+Here we are Create AWS-RDS with maridb using terraform (Terraform v0.13.5) + visualstudio (version 1.51.1)
 
 As  requirement we have to create below configuration step by step.
 
