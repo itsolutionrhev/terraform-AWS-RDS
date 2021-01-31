@@ -1,4 +1,4 @@
-#### Setup AWS-RDS step by step####
+#### Setup AWS-RDS step by step
 
 Here we are Create AWS-RDS with maridb using terraform (Terraform v0.13.5) + visualstudio (version 1.51.1)
 
@@ -41,5 +41,5 @@ Terraform has been successfully initialized!
 7) Apply your terraform plan
 
 > #terraform apply : apply terraform plan and resources create as per plan ex. Instance, seuritygroups, Subnets, RDS-service and Maridb database.
-########################################################END####################################################
+######################################################END####################################################
 
