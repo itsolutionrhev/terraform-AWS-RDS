@@ -33,7 +33,7 @@ resource "aws_db_instance" "itsolutionrhev-mariadb" {
   vpc_security_group_ids  = [aws_security_group.allow-mariadb.id]
   storage_type            = "gp2"
   backup_retention_period = 30                                          # how long you’re going to keep your backups
-  availability_zone       = aws_subnet.levelupvpc-private-1.availability_zone # prefered AZ
+  availability_zone       = aws_subnet.itsolutionrhevvpc-private-1.availability_zone # prefered AZ
   skip_final_snapshot     = true                                        # skip final snapshot when doing terraform destroy
   
   tags = {

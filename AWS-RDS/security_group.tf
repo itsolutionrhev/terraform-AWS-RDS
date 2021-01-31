@@ -40,7 +40,7 @@ resource "aws_security_group" "allow-mariadb" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    aws_security_group = [aws_security_group.allow-itsolutionrhev-ssh.id]
+    security_groups = [aws_security_group.allow-itsolutionrhev-ssh.id]
   }
   
   tags = {
