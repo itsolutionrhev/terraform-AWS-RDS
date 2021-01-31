@@ -41,6 +41,5 @@ Terraform has been successfully initialized!
 7) Apply your terraform plan
 
 > #terraform apply : apply terraform plan and resources create as per plan ex. Instance, seuritygroups, Subnets, RDS-service and Maridb database.
-
-#############################################################################END##############################################################################
+########################################################END####################################################
 
