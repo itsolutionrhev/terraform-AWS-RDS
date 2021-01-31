@@ -26,7 +26,7 @@ resource "aws_db_instance" "itsolutionrhev-mariadb" {
   identifier              = "mariadb"
   name                    = "mariadb"
   username                = "root"           # username of database
-  password                = "solution987"     # password of database
+  password                = "Xyz123987"     # password of database
   db_subnet_group_name    = aws_db_subnet_group.mariadb-subnets.name
   parameter_group_name    = aws_db_parameter_group.itsolutionrhev-mariadb-parameters.name
   multi_az                = "false"            # set to true to have high availability: 2 instances synchronized with each other
