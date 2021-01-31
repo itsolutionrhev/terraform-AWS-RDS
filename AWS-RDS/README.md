@@ -41,5 +41,40 @@ Terraform has been successfully initialized!
 7) Apply your terraform plan
 
 > #terraform apply : apply terraform plan and resources create as per plan ex. Instance, seuritygroups, Subnets, RDS-service and Maridb database.
+
+	Output:
+	 Apply complete! Resources: 19 added, 0 changed, 0 destroyed.
+
+	Outputs:
+
+	public_ip = 13.233.35.206
+	rds = mariadb.crvehogpuyj2.ap-south-1.rds.amazonaws.com:3306
+
+
+8) Test AWS-RDS database connection
+
+  login EC2 Instanc with Above ip.
+
+> #ssh -i your_key ubuntu@13.233.35.206
+
+  #apt-get update
+
+  #apt-get install mysql-client  (For connect mariadb)
+
+  #mysql -u root -h mariadb.crvehogpuyj2.ap-south-1.rds.amazonaws.com -p'xyz987'
+
+>mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| innodb             |
+| mariadb            |
+| mysql              |
+| performance_schema |
+| test               |
++--------------------+
+6 rows in set (0.00 sec)
+
 ######################################################END####################################################
 
